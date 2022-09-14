@@ -1,0 +1,72 @@
+﻿@model EmployeeDirectory5.Models.Employee
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.fName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.fName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhNo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhNo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.grade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.grade)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.stream)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.stream)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Technology)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Technology)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.workManager)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.workManager)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LineManager)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LineManager)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AreaOfIntestr)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AreaOfIntestr)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.EmployeeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
